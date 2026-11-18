@@ -25,7 +25,6 @@ const icons = ["✦", "⌂", "◌", "▱", "♡", "✧", "◒", "⌁"];
 export default function VenuePage({ dictionary, language }: { dictionary: Dictionary; language: Language }) {
   const t = dictionary;
   const [slide, setSlide] = useState(0);
-  const [aboutSlide, setAboutSlide] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [lightbox, setLightbox] = useState<number | null>(null);
@@ -46,10 +45,6 @@ export default function VenuePage({ dictionary, language }: { dictionary: Dictio
     const timer = window.setInterval(() => { if (!paused) setSlide((value) => (value + 1) % imagePaths.length); }, 5000);
     return () => window.clearInterval(timer);
   }, [paused]);
-  useEffect(() => {
-    const timer = window.setInterval(() => setAboutSlide((value) => (value + 1) % 4), 4500);
-    return () => window.clearInterval(timer);
-  }, []);
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (lightbox === null) return;
@@ -98,7 +93,7 @@ export default function VenuePage({ dictionary, language }: { dictionary: Dictio
         <div className="hero-content"><p className="eyebrow">{t.hero.eyebrow}</p><h1>{t.hero.title.replace(t.hero.accent, "")}<em>{t.hero.accent}</em></h1><p className="hero-copy">{t.hero.copy}</p><a className="button" href={href("contact")}>{t.hero.cta} <ArrowRight size={16} aria-hidden="true" /></a><div className="slider-dots" role="tablist" aria-label={language === "hi" ? "स्लाइड चुनें" : "Choose hero image"}>{imagePaths.map((src, index) => <button key={src} className={index === slide ? "active" : ""} role="tab" aria-label={`${index + 1}`} aria-selected={index === slide} onClick={() => setSlide(index)} />)}</div></div>
       </section>
 
-      <section className="section" id="about"><div className="inner about-grid"><div><p className="section-kicker">{t.about.kicker}</p><h2>{t.about.title.replace(t.about.accent, "")}<em>{t.about.accent}</em></h2><div className="rule" /><p className="about-copy">{t.about.copyFirst}</p><p className="about-copy">{t.about.copySecond}</p></div><div className="image-frame about-image"><img src={galleryImages[aboutSlide + 3]} alt={t.gallery.alts[aboutSlide % t.gallery.alts.length]} width={galleryDimensions[aboutSlide + 3][0]} height={galleryDimensions[aboutSlide + 3][1]} /></div></div></section>
+      <section className="section" id="about"><div className="inner about-grid"><div><p className="section-kicker">{t.about.kicker}</p><h2>{t.about.title.replace(t.about.accent, "")}<em>{t.about.accent}</em></h2><div className="rule" /><p className="about-copy">{t.about.copyFirst}</p><p className="about-copy">{t.about.copySecond}</p></div><div className="image-frame about-image"><img src="/images/hall.jpeg" alt={t.about.alt} width="1280" height="960" /></div></div></section>
 
       <section className="section highlights"><div className="inner"><p className="section-kicker">{t.highlights.kicker}</p><h2>{t.highlights.title}</h2><p className="section-intro">{t.highlights.intro}</p><div className="highlight-grid">{t.highlights.items.map((item, index) => <article className="highlight" key={item}><div className="highlight-icon" aria-hidden="true">{icons[index]}</div><h3>{item}</h3></article>)}</div></div></section>
 

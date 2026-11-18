@@ -9,6 +9,7 @@ const notoSans = Noto_Sans_Devanagari({ variable: "--font-devanagari-body", subs
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://varmalapalace.com/"),
+  verification: { google: "hWdPK7iG2V8RiECzxv5HiVetdCS8ZFHNvQqUK5oRD9w" },
   title: "वरमाला पैलेस | भभुआ, कैमूर का बेस्ट मैरिज लॉन और बैंक्वेट हॉल",
   description: "वरमाला पैलेस भभुआ का सुंदर शादी लॉन और कैमूर बैंक्वेट हॉल है, जहां विवाह, मांगलिक उत्सव और पारिवारिक समारोह मनाए जाते हैं।",
   alternates: { canonical: "https://varmalapalace.com/hi/", languages: { en: "https://varmalapalace.com/", hi: "https://varmalapalace.com/hi/", "x-default": "https://varmalapalace.com/" } },

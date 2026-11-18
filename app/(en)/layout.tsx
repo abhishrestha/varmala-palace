@@ -9,6 +9,7 @@ const notoSans = Noto_Sans_Devanagari({ variable: "--font-devanagari-body", subs
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://varmalapalace.com/"),
+  verification: { google: "hWdPK7iG2V8RiECzxv5HiVetdCS8ZFHNvQqUK5oRD9w" },
   title: "Varmala Palace | Best Marriage Lawn & Banquet in Bhabua, Kaimur",
   description: "Varmala Palace is a spacious marriage lawn in Bhabua and banquet hall in Kaimur for beautiful weddings, events and family celebrations.",
   alternates: { canonical: "https://varmalapalace.com/", languages: { en: "https://varmalapalace.com/", hi: "https://varmalapalace.com/hi/", "x-default": "https://varmalapalace.com/" } },
