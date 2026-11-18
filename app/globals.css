@@ -109,7 +109,6 @@ footer p, footer a { color: #6d5734; font-size: 14px; line-height: 1.8; }
 .footer-links { display: grid; gap: 6px; }
 .socials { display: flex; gap: 14px; }
 .socials a { border: 1px solid var(--gold); width: 34px; height: 34px; display: grid; place-items: center; font-size: 12px; }
-.copyright { border-top: 1px solid rgba(168,135,58,.35); margin-top: 55px; padding-top: 22px; display: flex; justify-content: space-between; color: #6d5734; font-size: 12px; }
 .bottom-bar { display: none; }
 .lightbox { position: fixed; inset: 0; z-index: 50; background: rgba(25,15,7,.94); display: grid; place-items: center; padding: 30px; }
 .lightbox img { max-width: 90vw; max-height: 82vh; object-fit: contain; }
