@@ -8,13 +8,13 @@ const notoSerif = Noto_Serif_Devanagari({ variable: "--font-devanagari-heading",
 const notoSans = Noto_Sans_Devanagari({ variable: "--font-devanagari-body", subsets: ["devanagari"], weight: ["400", "500"], display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://varmalapalace.com/"),
+  metadataBase: new URL("https://www.varmalapalace.in/"),
   verification: { google: "hWdPK7iG2V8RiECzxv5HiVetdCS8ZFHNvQqUK5oRD9w" },
-  title: "Varmala Palace | Best Marriage Lawn & Banquet in Bhabua, Kaimur",
+  title: "Varmala Palace | Marriage Lawn in Bhabua, Kaimur",
   description: "Varmala Palace is a spacious marriage lawn in Bhabua and banquet hall in Kaimur for beautiful weddings, events and family celebrations.",
-  alternates: { canonical: "https://varmalapalace.com/", languages: { en: "https://varmalapalace.com/", hi: "https://varmalapalace.com/hi/", "x-default": "https://varmalapalace.com/" } },
+  alternates: { canonical: "https://www.varmalapalace.in/", languages: { en: "https://www.varmalapalace.in/", hi: "https://www.varmalapalace.in/hi/", "x-default": "https://www.varmalapalace.in/" } },
   keywords: ["marriage lawn in Bhabua", "banquet hall in Kaimur", "wedding venue Bihar", "Varmala Palace Bhabua"],
-  openGraph: { title: "Varmala Palace | Wedding Venue in Kaimur", description: "Elegant weddings, celebrations and gatherings in Bhabua, Kaimur.", url: "https://varmalapalace.com/", siteName: "Varmala Palace", type: "website", images: [{ url: "/images/weddinglawn01.webp", width: 1360, height: 608, alt: "Varmala Palace wedding lawn" }] },
+  openGraph: { title: "Varmala Palace | Wedding Venue in Kaimur", description: "Elegant weddings, celebrations and gatherings in Bhabua, Kaimur.", url: "https://www.varmalapalace.in/", siteName: "Varmala Palace", type: "website", images: [{ url: "/images/weddinglawn01.webp", width: 1360, height: 608, alt: "Varmala Palace wedding lawn" }] },
   twitter: { card: "summary_large_image", title: "Varmala Palace", description: "Wedding venue in Kaimur, Bihar." },
   icons: { icon: "/favicon.svg" },
 };

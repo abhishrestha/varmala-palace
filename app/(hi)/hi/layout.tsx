@@ -8,12 +8,12 @@ const notoSerif = Noto_Serif_Devanagari({ variable: "--font-devanagari-heading",
 const notoSans = Noto_Sans_Devanagari({ variable: "--font-devanagari-body", subsets: ["devanagari"], display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://varmalapalace.com/"),
+  metadataBase: new URL("https://www.varmalapalace.in/"),
   verification: { google: "hWdPK7iG2V8RiECzxv5HiVetdCS8ZFHNvQqUK5oRD9w" },
   title: "वरमाला पैलेस | भभुआ, कैमूर का बेस्ट मैरिज लॉन और बैंक्वेट हॉल",
   description: "वरमाला पैलेस भभुआ का सुंदर शादी लॉन और कैमूर बैंक्वेट हॉल है, जहां विवाह, मांगलिक उत्सव और पारिवारिक समारोह मनाए जाते हैं।",
-  alternates: { canonical: "https://varmalapalace.com/hi/", languages: { en: "https://varmalapalace.com/", hi: "https://varmalapalace.com/hi/", "x-default": "https://varmalapalace.com/" } },
-  openGraph: { title: "वरमाला पैलेस | भभुआ, कैमूर", description: "भभुआ का सुंदर शादी लॉन और कैमूर बैंक्वेट हॉल।", url: "https://varmalapalace.com/hi/", locale: "hi_IN", type: "website" },
+  alternates: { canonical: "https://www.varmalapalace.in/hi/", languages: { en: "https://www.varmalapalace.in/", hi: "https://www.varmalapalace.in/hi/", "x-default": "https://www.varmalapalace.in/" } },
+  openGraph: { title: "वरमाला पैलेस | भभुआ, कैमूर", description: "भभुआ का सुंदर शादी लॉन और कैमूर बैंक्वेट हॉल।", url: "https://www.varmalapalace.in/hi/", locale: "hi_IN", type: "website" },
   twitter: { card: "summary_large_image", title: "वरमाला पैलेस", description: "भभुआ, कैमूर का शादी लॉन और बैंक्वेट हॉल।" },
   icons: { icon: "/favicon.svg" },
 };
